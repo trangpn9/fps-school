@@ -1,0 +1,86 @@
+#footer {
+    background-color: #253b70;
+    color: #bec5d4;    
+    position: relative;
+    padding: 145px 0;
+}
+
+#footer h3.title-footer {
+    font-family: fontMenu !important;
+    color: #ffffff;
+}
+
+#info-footer {
+    background-color: #f0efe8;
+    position: relative;
+    display: block;
+}
+#info-footer:before {
+    position: absolute;
+    content: '';
+    margin: 0 auto;
+    background: url(../../../assets/images/icon-home/logo-shap-2.png) center center no-repeat;
+    width: 100%;
+    height: 57px;    
+    top: -57px;    
+}
+@media only screen and (max-width: 768px) {
+    #footer {
+        padding: 30px 0;
+    }
+    #info-footer:before {
+        display: none !important;
+    }
+}
+
+#footer .footer-info div {
+    line-height: 20px;
+    white-space: 15px;
+}
+#info-footer .footer-social {
+    position: relative;
+    display: inline-block;
+    top: 3px;
+}
+#info-footer .footer-social ul, #info-footer .footer-social li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+#info-footer .social-style-one li {
+    position: relative;
+    display: inline-block;
+    margin-right: 6px;
+}
+#info-footer .social-style-one li a {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background: #3b5998;
+    border-radius: 50%;
+}
+#info-footer .social-style-one li a {
+    text-decoration: none;
+    transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+#info-footer .social-style-one li:nth-child(2) a {
+    background: #1da1f2;
+}
+#info-footer .social-style-one li:nth-child(3) a {
+    background: #ea4335;
+}
+#info-footer .social-style-one li:last-child a {
+    background: #7232bd;
+}
+#info-footer .social-style-one li a:hover{
+    background: #FF7162;
+}

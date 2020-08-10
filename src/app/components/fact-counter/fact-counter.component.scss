@@ -1,0 +1,54 @@
+.fact-counter {
+    position: relative;
+    display: block;
+    background: #fbb419;
+    padding: 93px 0px 102px 0px;
+}
+.fact-counter .counter-block .count-outer span {
+    position: relative;
+    display: block;
+    font-size: 60px;
+    line-height: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: 900;
+    margin-bottom: 9px;
+}
+.fact-counter .counter-block .icon-box {
+    position: absolute;
+    left: 0px;
+    top: 12px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #fff;
+}
+.fact-counter .counter-block .text {
+    position: relative;
+    display: block;
+    font-size: 17px;
+    line-height: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.fact-counter .counter-block .icon-box {
+    position: absolute;
+    left: 0px;
+    top: 12px;
+    font-size: 55px;
+    line-height: 55px;
+    color: #fff;
+}
+.fact-counter .counter-block {
+    position: relative;
+    display: block;
+    padding: 0px 0px 0px 80px;
+}
+@media only screen and (max-width: 767px){
+    .fact-counter .counter-block {
+        margin: 15px auto;
+        max-width: 210px;
+        width: 100%;
+    }
+}

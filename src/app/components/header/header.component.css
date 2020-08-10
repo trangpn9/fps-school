@@ -1,0 +1,68 @@
+#top-bar {        
+    position: relative;
+    background-color: #253B70;
+    /* background-color: #0B2860; */
+}
+#top-bar ul.nav {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+#top-bar ul li {
+    float: left;    
+}
+.li-icon {
+    color: #333333;
+}
+#top-bar ul li.li-icon {
+    padding-left: 32px;
+}
+#top-bar ul li.icon-email {
+    margin-right: 10px;
+    color: #ffffff;
+}
+#top-bar ul li.icon-tel {
+    color: #ffffff;
+}
+#top-bar ul li.icon-tel::before {
+    background-image: url(../../../assets/images/icon-tel-header.png);
+    top: 3px;
+}
+#top-bar ul li.icon-email::before {
+    background-image: url(../../../assets/images/icon-mail-header.png);
+    top:5px;
+}
+#top-bar ul li.icon-email::before, #top-bar ul li.icon-tel::before {
+    left: 0;
+    width: 20px;
+    background-size: auto !important;
+}
+#top-bar ul li.nav-item {
+    margin-right: 5px;
+}
+#top-bar ul li.nav-item:last-child {
+    margin-right: 0 !important;
+}
+#top-bar ul li.nav-item img {    
+    width: auto;
+}
+#id-language {
+    margin-right: 5px;
+}
+#id-language .dropdown-item img {
+    width: 30px !important;
+}
+#id-language .btn.btn-outline-primary.btn-sm {
+    padding: .08rem .5rem !important;
+    border-color: transparent !important;
+    color: #ffffff;
+}
+#id-language .btn.btn-outline-primary.btn-sm:hover {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+#top-bar h6 {
+    font-family: fontMenu;
+    color: #ffffff;
+    font-size: 26px;
+    margin-bottom: 0;
+}

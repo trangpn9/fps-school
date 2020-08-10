@@ -1,0 +1,40 @@
+.cta-section {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: #9321eb;
+    padding: 95px 0px;
+}
+.cta-section .content-box h4 {
+    position: relative;
+    display: block;
+    font-size: 60px;     
+    color: #fff;    
+    margin-bottom: 11px;
+    font-family: fontMenu;
+}
+.cta-section .content-box .text {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+    color: #dfbdf9;
+    font-weight: 600;
+    margin-bottom: 36px;
+}
+.cta-section .anim-icon .icon-1 {
+    background: url(../../../assets/images/icon-home/anim-icon-9.png);
+    width: 158px;
+    height: 115px;
+    top: -45px;
+    left: 150px;
+    background-repeat: no-repeat;
+}
+.cta-section .anim-icon .icon-2 {
+    background: url(./../../../assets/images/icon-home/anim-icon-10.png);
+    width: 149px;
+    height: 106px;
+    top: 220px;
+    right: 260px;
+    background-repeat: no-repeat;
+}

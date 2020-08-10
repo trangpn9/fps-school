@@ -1,0 +1,174 @@
+.our-teachers {
+    position: relative;
+    display: block;
+}
+.our-teachers .sec-title {
+    margin-bottom: 60px;
+}
+.teachers-block-one {
+    position: relative;
+    display: block;
+}
+.teachers-block-one .inner-box {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.teachers-block-one .inner-box .image-holder {
+    position: relative;
+    display: inline-block;
+    border: 2px dashed #fbb928;
+    padding: 18px;
+    border-radius: 50%;
+}
+.teachers-block-one .inner-box .image-holder .image-box {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background: #2b3c6b;
+    border-radius: 50%;
+}
+.teachers-block-one .inner-box .image-holder img {
+    width: 100%;
+    border-radius: 50%;
+    transition: all 500ms ease;
+}
+.our-teachers .block-column:nth-child(2) .teachers-block-one .inner-box .image-holder {
+    border-color: #43b3d9;
+}
+.our-teachers .block-column:last-child .teachers-block-one .inner-box .image-holder {
+    border-color: #ff7162;
+}
+.teachers-block-one .inner-box:hover .image-holder img {
+    transform: scale(1.03);
+    opacity: 0.5;
+}    
+.teachers-block-one .inner-box .lower-content {
+    position: relative;
+    display: block;
+    background: url(./../../../assets/images/our-teacher/teacher-icon-1.png);
+    max-width: 283px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 31px 15px 8px 15px;
+    margin-top: -44px;
+    background-repeat: no-repeat;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.our-teachers .block-column:nth-child(2) .teachers-block-one .inner-box .lower-content{
+    background: url(./../../../assets/images/our-teacher/teacher-icon-2.png);
+    background-repeat: no-repeat;
+}
+  
+  .our-teachers .block-column:last-child .teachers-block-one .inner-box .lower-content{
+    background: url(./../../../assets/images/our-teacher/teacher-icon-3.png);
+    background-repeat: no-repeat;
+}
+  
+.teachers-block-one .inner-box:hover .lower-content{
+    background: url(./../../../assets/images/our-teacher/hover-1.png);
+    background-repeat: no-repeat;
+    max-width: 303px;
+    margin-top: -74px;
+    padding: 31px 15px 38px 15px;
+}
+  
+.our-teachers .block-column:nth-child(2) .teachers-block-one .inner-box:hover .lower-content{
+    background: url(./../../../assets/images/our-teacher/hover-2.png);
+    background-repeat: no-repeat;
+    max-width: 303px;
+    margin-top: -74px;
+    padding: 31px 15px 38px 15px;
+}
+  
+.our-teachers .block-column:last-child .teachers-block-one .inner-box:hover .lower-content{
+    background: url(./../../../assets/images/our-teacher/hover-3.png);
+    background-repeat: no-repeat;
+    max-width: 303px;
+    margin-top: -74px;
+    padding: 31px 15px 38px 15px;
+}
+  
+.teachers-block-one .inner-box .lower-content h3{
+    color: #fff;
+    margin-bottom: 5px;
+}
+  
+.teachers-block-one .inner-box .lower-content h3 a{
+    position: relative;
+    display: inline-block;
+    color: #fff;
+}
+  
+.teachers-block-one .inner-box .lower-content .designation{
+    position: relative;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    margin-bottom: 7px;
+}
+
+.teachers-block-one .inner-box .lower-content .social-list{
+    position: relative;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 900ms ease;
+    padding-left: 0;
+    font-weight: 900;
+}
+  
+.teachers-block-one .inner-box:hover .lower-content .social-list{
+    opacity: 1;
+    transform: translateY(0px);
+}
+  
+.teachers-block-one .inner-box .lower-content .social-list li{
+    position: relative;
+    display: inline-block;
+    margin: 0px 10px;
+}
+  
+.teachers-block-one .inner-box .lower-content .social-list li a{
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+}
+.sec-title h3 {
+    text-transform: capitalize;
+}
+.lower-content h3 {
+    position: relative;
+    display: block;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: normal !important;
+    color: #2b3c6b;
+    margin-bottom: 10px;
+}
+.teachers-block-one .inner-box .lower-content h3 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+.teachers-block-one .inner-box .lower-content h3 a {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+}
+.teachers-block-one .inner-box .lower-content .designation {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    margin-bottom: 7px;
+}

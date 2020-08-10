@@ -1,0 +1,403 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+@font-face {
+  font-family: fontMenu;
+  src: url(./assets/fonts/Coiny-Regular.ttf);
+}
+
+@font-face {
+  font-family: fontContent;
+  src: url(./assets/fonts/Gotu-Regular.ttf);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;  
+  opacity: 0.5;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(168, 168, 168);    
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #b3b3b3;
+  outline: 1px solid #888;
+  // opacity: .5;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  opacity: .1;
+}
+
+.dropdown-menu {
+  z-index: 1600 !important;
+}
+
+.text-color {
+  color: #0489c2 !important;
+}
+
+li.li-icon {
+  position: relative;
+  list-style: none;
+}
+
+#footer {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;  
+}
+
+#footer li.li-icon {  
+  padding: 8px 0;
+  line-height: 25px;
+  text-align: justify;
+}
+
+li.icon-address::before {
+  position: absolute;
+  left: -40px;
+  content: "";
+  background-image: url('./assets/images/icon-addressl.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  top: 10px;
+  background-size: 1.8rem;
+  width: 30px;
+  height: 100%;
+}
+
+li.icon-tel::before {
+  position: absolute;
+  left: -40px;
+  content: "";
+  background-image: url('./assets/images/icon-tel.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  top: 10px;
+  background-size: 1.5rem;
+  width: 30px;
+  height: 100%;
+}
+
+li.icon-email::before {
+  position: absolute;
+  left: -40px;
+  content: "";
+  background-image: url('./assets/images/icon-mail.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  top: 6px;
+  background-size: 1.5rem;
+  width: 30px;
+  height: 100%;
+}
+
+#footer h3.title-footer {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-size: 1.39rem;
+  position: relative;
+}
+
+#footer h4.title-info-contact {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+#info-footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+ul#social-footer li.nav-item img {
+  margin-right: 5px;
+  width: 30px;
+  height: auto;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto 28px;
+}
+
+.alignleft {
+  float: left;
+  margin: 6px 0 28px 0;
+}
+
+#navbarTogglerMainMenu .nav-item a {  
+  text-transform: capitalize;
+  font-size: 23px;
+}
+#navbarTogglerMainMenu .nav-item a, 
+.set-font-menu, .h3-title {
+  font-family: fontMenu !important;
+}
+.set-font-content {
+  font-family: fontContent !important;
+  font-size: 19px;
+}
+.sec-title h5 {
+  position: relative;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 26px;
+  color: #ff7162;
+  font-family: fontMenu, sans-serif;
+  font-weight: normal !important;
+  margin-bottom: 13px;
+  padding: 0px 50px 0px 50px;
+}
+.sec-title h5:before {
+  position: absolute;
+  content: '';
+  background: #ff7162;
+  width: 30px;
+  height: 2px;
+  left: 0px;
+  bottom: 11px;
+}
+.sec-title h1, .sec-title h2, .sec-title h3 {
+  position: relative;
+  display: block;
+  font-size: 40px;
+  line-height: 50px;
+  font-family: fontMenu, sans-serif;  
+  font-weight:normal !important;
+  color: #2b3c6b;
+}
+.service-section .sec-title h2, .classes-section .sec-title h3 {
+  text-transform: capitalize;
+}
+.service-section .sec-title h2, .service-section .inner-content .text {
+  color: #ffffff !important;
+}
+.theme-btn {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  font-family: fontMenu, sans-serif;
+  padding: 17px 40px;
+  background-color: #ff7162;
+  line-height: 26px;
+  color: #ffffff !important;  
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  transition: all 500ms ease;
+  z-index: 1;
+  text-decoration: none;
+}
+.theme-btn:before {
+  text-decoration: none;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  background-color: #253b70;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transform: scale(0.2, 1);
+  transform: scale(0.2, 1);  
+}
+.theme-btn:hover{
+  text-decoration: none;
+}
+.theme-btn:hover:before {
+  text-decoration: none;
+  opacity: 1;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+.anim-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;    
+}
+.anim-icon .icon {
+  position: absolute;
+  background-repeat: no-repeat;
+}
+.float-bob-x {
+  animation-name: float-bob-x;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-animation-name: float-bob-x;
+  -webkit-animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: float-bob-x;
+  -moz-animation-duration: 15s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: float-bob-x;
+  -ms-animation-duration: 15s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  -o-animation-name: float-bob-x;
+  -o-animation-duration: 15s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: linear;
+}
+.sec-pad {
+  padding: 144px 0px 150px 0px;
+}
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;  
+}
+a{
+  text-decoration:none;
+  transition:all 500ms ease;
+  -moz-transition:all 500ms ease;
+  -webkit-transition:all 500ms ease;
+  -ms-transition:all 500ms ease;
+  -o-transition:all 500ms ease;
+}
+h3 a {
+  position: relative;
+  display: inline-block;
+  color: #2b3c6b;
+}
+h3 a:hover{
+  text-decoration:none;
+  outline:none;
+  color: #ff7162;
+}
+.sec-title h5:after {
+  position: absolute;
+  content: '';
+  background: #ff7162;
+  width: 30px;
+  height: 2px;
+  right: 0px;
+  bottom: 11px;
+}
+.style-two.sec-title h5:after {
+  background: transparent !important;
+}
+.event-block-one .inner-box .content-box {
+  position: relative;
+  display: block;
+  padding-left: 270px;
+}
+.event-block-one .inner-box .content-box .text {
+  position: relative;
+  display: block;
+  margin-bottom: 18px;
+}
+.event-block-one .inner-box .content-box .location {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  color: #848484;
+  font-family: sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.event-block-one .inner-box .content-box .location span {
+  font-weight: 700;
+  color: #ff7162;
+}
+.parallax-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.parallax-icon .icon-1 {
+  left: 110px !important;
+  top: 160px !important;
+  background: url(./assets/images/icon-home/parallax/parallax-icon-1.png);
+  width: 131px;
+  height: 86px;
+  background-repeat: no-repeat;    
+  /* background-position: var(--x) var(--y); */
+}
+
+.parallax-icon .icon-2 {
+  left: 30% !important;
+  top: 80px !important;
+  background: url(./assets/images/icon-home/parallax/parallax-icon-2.png);
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+}
+
+.parallax-icon .icon-3 {
+  left: 27% !important;
+  top: 70% !important;
+  background: url(./assets/images/icon-home/parallax/parallax-icon-3.png);
+  width: 59px;
+  height: 63px;
+  background-repeat: no-repeat;
+}
+
+.parallax-icon .icon-4 {
+  left: 55% !important;
+  top: 45% !important;
+  background: url(./assets/images/icon-home/parallax/parallax-icon-4.png);
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+}
+
+.parallax-icon .icon-5 {
+  left: 45% !important;
+  top: 55px !important;
+  background: url(./assets/images/icon-home/parallax/parallax-icon-5.png);
+  width: 119px;
+  height: 54px;
+  background-repeat: no-repeat;
+}
+
+.parallax-icon .icon-6 {
+  left: 65% !important;
+  top: 40% !important;
+  background: url(./assets/images/icon-home/parallax/parallax-icon-6.png);
+  width: 47px;
+  height: 65px;
+  background-repeat: no-repeat;
+}
+
+.parallax-icon .icon-7 {
+  left: 72% !important;
+  top: 70% !important;
+  background: url(./assets/images/icon-home/parallax/parallax-icon-7.png);
+  width: 57px;
+  height: 50px;
+  background-repeat: no-repeat;
+}
+.service-section .owl-theme .owl-nav .owl-prev, 
+.service-section .owl-theme .owl-nav .owl-next{
+  background: transparent !important;
+  transition: all 500ms ease;
+}
+.service-section .owl-theme .owl-nav .owl-prev:hover, 
+.service-section .owl-theme .owl-nav .owl-next:hover{
+  background: #0489c2 !important;
+}

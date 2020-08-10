@@ -1,0 +1,17 @@
+.gallery-section {
+    position: relative;
+    display: block;
+    background: #f2eee9;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.gallery-section .sec-title {
+    position: relative;
+    display: block;
+    margin-bottom: 60px;
+}
+.gallery-section .card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}

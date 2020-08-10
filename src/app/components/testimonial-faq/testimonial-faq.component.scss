@@ -1,0 +1,44 @@
+.testimonial-faq {
+    position: relative;
+    display: block;
+    padding: 144px 0px 135px 0px;
+}
+.testimonial-content .sec-title, .faq-content .sec-title {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+}
+.testimonial-content .inner-content .media {    
+    background: #253b71;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+.testimonial-content .inner-content .media img {
+    width: 80px;
+    height: auto;
+}
+.testimonial-content h4 {
+    font-size: 14px;
+}
+.testimonial-content h4, .testimonial-content .media-body {
+    color: #ffffff;
+}
+.accordion-box {
+    list-style: none;
+    padding-left: 0;
+}
+.accordion-box .block {
+    position: relative;
+    margin-bottom: 20px;
+    border: 2px solid #43b3d9;
+    border-radius: 20px;
+    padding: 20px;
+}
+.accordion-box .block:nth-child(2) {
+    border-color: #fbb419;
+}
+.accordion-box .block:last-child {
+    margin-bottom: 0px;
+    border-color: #ff7162;
+}
