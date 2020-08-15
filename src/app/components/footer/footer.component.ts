@@ -24,13 +24,13 @@ export class FooterComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    const el = document.querySelector("#icon-1");    
-    el.addEventListener("mousemove", (e) => {
-      console.log('test: ', e);
+    // const el = document.querySelector("#icon-1");    
+    // el.addEventListener("mousemove", (e) => {
+    //   console.log('test: ', e);
       
-      // el.style.setProperty('--x', -e.offsetX + "px");
-      // el.style.setProperty('--y', -e.offsetY + "px");
-    });
+    //   // el.style.setProperty('--x', -e.offsetX + "px");
+    //   // el.style.setProperty('--y', -e.offsetY + "px");
+    // });
   }
 
 }

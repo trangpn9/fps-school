@@ -58,10 +58,8 @@ const appRouters: Routes = [
   imports: [
     CommonModule,
     FontAwesomeModule,
-    RouterModule.forRoot(
-      appRouters,
-      { enableTracing: false } // <-- debugging purposes only
-    ),
+    RouterModule.forRoot(appRouters, { enableTracing: false, initialNavigation: 'enabled' } // <-- debugging purposes only
+),
     CarouselModule,
     BrowserAnimationsModule,
   ],

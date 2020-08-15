@@ -19,7 +19,7 @@ import { MainMenuComponent } from './components/main-menu/main-menu.component';
     MainMenuComponent, 
   ],
   imports: [    
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     HttpClientModule,
     FontAwesomeModule,
     AppRoutingModule,
