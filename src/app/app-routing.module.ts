@@ -22,6 +22,8 @@ import { EventSectionComponent } from './components/event-section/event-section.
 import { TestimonialFaqComponent } from './components/testimonial-faq/testimonial-faq.component';
 import { CtaSectionComponent } from './components/cta-section/cta-section.component';
 import { GallerySectionComponent } from './components/gallery-section/gallery-section.component';
+import { I18N_PROVIDERS } from './i18next.config';
+import { I18NextModule } from 'angular-i18next';
 
 
 const appRouters: Routes = [
@@ -59,9 +61,13 @@ const appRouters: Routes = [
     CommonModule,
     FontAwesomeModule,
     RouterModule.forRoot(appRouters, { enableTracing: false, initialNavigation: 'enabled' } // <-- debugging purposes only
-),
+    ),
     CarouselModule,
     BrowserAnimationsModule,
+    I18NextModule.forRoot(),
+  ],
+  providers: [
+    I18N_PROVIDERS
   ],
 
   exports: [RouterModule]

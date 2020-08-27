@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { I18NextModule } from 'angular-i18next';
+import { I18N_PROVIDERS } from './i18next.config';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,8 +25,11 @@ import { MainMenuComponent } from './components/main-menu/main-menu.component';
     HttpClientModule,
     FontAwesomeModule,
     AppRoutingModule,
+    I18NextModule.forRoot(),
   ],
-  providers: [],
+  providers: [
+    I18N_PROVIDERS
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
