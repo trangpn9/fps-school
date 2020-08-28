@@ -1,45 +1,51 @@
 <div class="bg-custom-light sticky-top" id="main-menu">
-    <div class="container">    
-        <nav class="navbar navbar-expand-lg navbar-light row">
-            <a class="navbar-brand d-block d-md-none" routerLink="/">
-                <img alt="Logo Foxs-USA" src="../../../assets/images/logo_FPS_210_mobile.png" style="width: 100px;" />
-            </a>            
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerMainMenu"
-                aria-controls="navbarTogglerMainMenu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light row">
+      <a class="navbar-brand d-block d-md-none" routerLink="/">
+        <img alt="Logo Foxs-USA" src="../../../assets/images/logo_FPS_210_mobile.png" style="width: 100px;" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerMainMenu"
+        aria-controls="navbarTogglerMainMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <div class="collapse navbar-collapse" id="navbarTogglerMainMenu">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-center text-color nav-link-0" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/">Trang chủ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-center text-color nav-link-1" routerLinkActive="active" routerLink="/about-us">Giới thiệu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-center text-color nav-link-2" routerLinkActive="active" routerLink="/news">FPS News</a>
-                    </li>
-                </ul>
-                <a routerLink="/" class="d-sm-block d-none text-center">
-                    <img alt="Logo Foxs-USA" class="logo" src="../../../assets/images/logo_FPS_210.png" title="Logo Foxs-USA"/>
-                </a>
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-center text-color nav-link-3" routerLinkActive="active" routerLink="/services">Giáo trình</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-center text-color nav-link-4" routerLinkActive="active" routerLink="/contact">Tuyển sinh</a>
-                    </li>                
-                    <li class="nav-item">
-                        <a class="nav-link text-center text-color nav-link-5" routerLinkActive="active" routerLink="/recruitment">Tuyển dụng</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0 d-none">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
-                </form>
-            </div>
-        </nav>
-    </div>
+      <div class="collapse navbar-collapse" id="navbarTogglerMainMenu">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link text-center text-color nav-link-0" routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }" routerLink="/">{{'menu-home' | i18next}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center text-color nav-link-1" routerLinkActive="active"
+              routerLink="/about-us">{{'menu-about' | i18next}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center text-color nav-link-2" routerLinkActive="active"
+              routerLink="/news">{{'menu-news' | i18next}}</a>
+          </li>
+        </ul>
+        <a routerLink="/" class="d-sm-block d-none text-center">
+          <img alt="Logo Foxs-USA" class="logo" src="../../../assets/images/logo_FPS_210.png" title="Logo Foxs-USA" />
+        </a>
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link text-center text-color nav-link-3" routerLinkActive="active"
+              routerLink="/services">{{'menu-curriculum' | i18next}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center text-color nav-link-4" routerLinkActive="active"
+              routerLink="/contact">{{'menu-enroll' | i18next}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center text-color nav-link-5" routerLinkActive="active"
+              routerLink="/recruitment">{{'menu-recrutement' | i18next}}</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 d-none">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
+        </form>
+      </div>
+    </nav>
+  </div>
 </div>

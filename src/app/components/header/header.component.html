@@ -1,51 +1,53 @@
 <div id="top-bar">
-    <div class="container d-sm-block d-none">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <ul class="nav">
-                    <li class="li-icon icon-email">froebelhanoi@gmail.com</li>
-                    <li class="li-icon icon-tel">0989.888.786</li>
-                </ul>
+  <div class="container d-sm-block d-none">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <ul class="nav">
+          <li class="li-icon icon-email">froebelhanoi@gmail.com</li>
+          <li class="li-icon icon-tel">0989.888.786</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="nav float-right">
+          <li>
+            <div class="dropdown" id="id-language">
+              <button class="btn btn-outline-primary dropdown-toggle btn-sm" type="button" id="dropdownMenu2"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img alt="Vietnamese" src="./../../../assets/images/vn.png" class="logo-language" *ngIf="language === 'vn'"/>
+                <img alt="Vietnamese" src="./../../../assets/images/en.png" class="logo-language" *ngIf="language === 'en'"/>
+                Language
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button" (click)="changeLanguage('vn')"><img alt="Vietnamese"
+                    src="./../../../assets/images/vn.png" /> Vietnamese</button>
+                <button class="dropdown-item" type="button" (click)="changeLanguage('en')"><img alt="English"
+                    src="./../../../assets/images/en.png" />
+                  English</button>
+              </div>
             </div>
-            <div class="col-md-6">
-                <ul class="nav float-right">                                    
-                    <li>
-                        <div class="dropdown" id="id-language">
-                            <button class="btn btn-outline-primary dropdown-toggle btn-sm" type="button"
-                                id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Language
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <button class="dropdown-item" type="button" (click)="changeLanguage('vn')" ><img alt="Vietnamese"
-                                        src="./../../../assets/images/vn.png" /> Vietnamese</button>
-                                <button class="dropdown-item" type="button" (click)="changeLanguage('en')"><img alt="English"
-                                        src="./../../../assets/images/en.png" />
-                                    English</button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">
-                            <img alt="Icon footer social" src="../../../assets/images/icon-sm-face-white.png" />
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">
-                            <img alt="Icon footer social" src="../../../assets/images/icon-sm-youtube.png" />
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">
-                            <img alt="Icon footer social" src="../../../assets/images/icon-sm-instal-white.png" />
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">
-                            <img alt="Icon footer social" src="../../../assets/images/icon-sm-twiter-white.png" />
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+          </li>
+          <li class="nav-item">
+            <a href="#">
+              <img alt="Icon footer social" src="../../../assets/images/icon-sm-face-white.png" />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#">
+              <img alt="Icon footer social" src="../../../assets/images/icon-sm-youtube.png" />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#">
+              <img alt="Icon footer social" src="../../../assets/images/icon-sm-instal-white.png" />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#">
+              <img alt="Icon footer social" src="../../../assets/images/icon-sm-twiter-white.png" />
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
 </div>

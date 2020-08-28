@@ -1,3 +1,8 @@
 {
-  "test": "Welcome to FPS-School i18next"
+  "menu-home": "Home",
+  "menu-about": "About us",
+  "menu-news": "FPS News",
+  "menu-curriculum": "Curriculum",
+  "menu-enroll": "Enroll",
+  "menu-recrutement": "Recrutement"
 }

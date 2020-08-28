@@ -21,12 +21,12 @@ export class HeaderComponent implements OnInit {
         this.updateState(this.i18NextService.language);
       }
     });
-    this.i18NextService.addResourceBundle('en', 'translation', {
-      addEn: 'value',
-    }, true, true);
-    this.i18NextService.addResourceBundle('vn', 'translation', {
-      addEn: 'vn-value',
-    }, true, true);
+    // this.i18NextService.addResourceBundle('en', 'translation', {
+    //   addEn: 'value',
+    // }, true, true);
+    // this.i18NextService.addResourceBundle('vn', 'translation', {
+    //   addEn: 'vn-value',
+    // }, true, true);
   }
 
   changeLanguage(lang: string) {    

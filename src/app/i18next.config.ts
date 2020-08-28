@@ -12,7 +12,7 @@ export function appInit(i18next: ITranslationService) {
     .init({
         whitelist: ['vn', 'en'],
         fallbackLng: 'vn',
-        debug: true,
+        debug: false,
         returnEmptyString: false,
         ns: [
           'translation',                   

@@ -401,3 +401,10 @@ h3 a:hover{
 .service-section .owl-theme .owl-nav .owl-next:hover{
   background: #0489c2 !important;
 }
+.bg-header-page {
+  background: url(./assets/images/page-title.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 250px;
+  background-size: cover;
+}
