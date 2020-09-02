@@ -1,5 +1,6 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { I18NextModule } from 'angular-i18next';
 import { I18N_PROVIDERS } from './i18next.config';
@@ -18,11 +19,12 @@ import { MainMenuComponent } from './components/main-menu/main-menu.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    MainMenuComponent, 
+    MainMenuComponent,    
   ],
   imports: [    
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    BrowserModule.withServerTransition({ appId: 'serverApp' }), 
     HttpClientModule,
+    BrowserAnimationsModule,       
     FontAwesomeModule,
     AppRoutingModule,
     I18NextModule.forRoot(),

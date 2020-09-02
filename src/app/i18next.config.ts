@@ -4,9 +4,9 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import sprintf from 'i18next-sprintf-postprocessor';
 import { APP_INITIALIZER, LOCALE_ID } from '@angular/core';
 
-export function appInit(i18next: ITranslationService) {
+export function appInit(i18next: ITranslationService) {    
     return () => i18next
-    .use(XHR )
+    .use(XHR)
     .use(LanguageDetector)
     .use(sprintf)
     .init({

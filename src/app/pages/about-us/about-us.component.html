@@ -1,8 +1,26 @@
-<div class="container-fluid">
-    <div class="row bg-header-page">    
-        <h3 class="h3-title d-flex text-color set-font-menu">Giới thiệu</h3>
+<section class="bg-main-content-page about-section">
+    <div class="anim-icon">
+        <div class="icon icon-1 float-bob-x"></div>
+        <div class="icon icon-2 wow zoomIn"></div>
+        <div class="icon icon-3"></div>
     </div>
-    <div class="row">        
-        <p>Dữ liệu đang cập nhật...!</p>
+    <div class="container" *ngIf="data; else loading">
+        <div class="row">
+            <h1 class="h3-title d-flex text-color set-font-menu">{{data['title']['rendered']}}</h1>
+        </div>
+        <div class="row">
+            <div class="col" [innerHTML]="data['content']['rendered'] | renderHtml"></div>
+        </div>
     </div>
-</div>
+</section>
+
+<ng-template #loading>
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col">
+                <p>Loading...</p>
+            </div>
+        </div>
+    </div> -->
+    <app-pre-loading></app-pre-loading>
+</ng-template>

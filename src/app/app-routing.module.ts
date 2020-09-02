@@ -25,6 +25,8 @@ import { GallerySectionComponent } from './components/gallery-section/gallery-se
 import { I18N_PROVIDERS } from './i18next.config';
 import { I18NextModule } from 'angular-i18next';
 
+import {RenderHtmlPipe} from './pipes/render-html.pipe';
+import { PreLoadingComponent } from './components/pre-loading/pre-loading.component'
 
 const appRouters: Routes = [
   { path: '', component: HomePageComponent },
@@ -39,6 +41,7 @@ const appRouters: Routes = [
 
 @NgModule({
   declarations: [
+    RenderHtmlPipe,
     PageNotFoundComponent,
     HomePageComponent,
     SlideComponent,
@@ -55,11 +58,12 @@ const appRouters: Routes = [
     EventSectionComponent,
     TestimonialFaqComponent,
     CtaSectionComponent,
-    GallerySectionComponent,    
+    GallerySectionComponent,
+    PreLoadingComponent,        
   ],  
   imports: [
     CommonModule,
-    FontAwesomeModule,
+    FontAwesomeModule,    
     RouterModule.forRoot(appRouters, { enableTracing: false, initialNavigation: 'enabled' } // <-- debugging purposes only
     ),
     CarouselModule,
@@ -70,6 +74,11 @@ const appRouters: Routes = [
     I18N_PROVIDERS
   ],
 
-  exports: [RouterModule]
+  exports: [
+    CommonModule,
+    RouterModule,
+    RenderHtmlPipe,
+    PreLoadingComponent    
+  ]
 })
 export class AppRoutingModule { }
