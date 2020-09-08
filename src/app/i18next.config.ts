@@ -1,12 +1,12 @@
 import { ITranslationService, I18NEXT_SERVICE, I18NextModule, defaultInterpolationFormat } from 'angular-i18next';
-import XHR  from 'i18next-xhr-backend';
+import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import sprintf from 'i18next-sprintf-postprocessor';
 import { APP_INITIALIZER, LOCALE_ID } from '@angular/core';
 
 export function appInit(i18next: ITranslationService) {    
     return () => i18next
-    .use(XHR)
+    .use(Backend)
     .use(LanguageDetector)
     .use(sprintf)
     .init({
