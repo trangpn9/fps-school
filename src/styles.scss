@@ -236,6 +236,9 @@ ul#social-footer li.nav-item img {
   position: absolute;
   background-repeat: no-repeat;
 }
+.page-section-icon .anim-icon .icon {
+  z-index: -1;
+}
 .float-bob-x {
   animation-name: float-bob-x;
   animation-duration: 15s;

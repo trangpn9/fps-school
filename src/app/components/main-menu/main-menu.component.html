@@ -32,10 +32,19 @@
             <a class="nav-link text-center text-color nav-link-3" routerLinkActive="active"
               routerLink="/services">{{'menu-curriculum' | i18next}}</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-center text-color nav-link-4" routerLinkActive="active"
-              routerLink="/contact">{{'menu-enroll' | i18next}}</a>
-          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-center text-color nav-link-4 dropdown-toggle" routerLinkActive="active"              
+              id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{'menu-enroll' | i18next}}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item text-sub-menu" routerLink="/contact" style="color: #FF2002 !important">Tại sao chọn Froebel Preschool</a>
+              <a class="dropdown-item text-sub-menu" routerLink="/" style="color: #ffc000 !important">Thông báo tuyển sinh</a>
+              <a class="dropdown-item text-sub-menu" routerLink="/" style="color: #14b7f1 !important">Học phí Froebel Preschool</a>                           
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-sub-menu" routerLink="/" style="color: rgb(25, 117, 17) !important">Câu hỏi thường gặp</a>
+            </div>
+          </li>                  
           <li class="nav-item">
             <a class="nav-link text-center text-color nav-link-5" routerLinkActive="active"
               routerLink="/recruitment">{{'menu-recrutement' | i18next}}</a>

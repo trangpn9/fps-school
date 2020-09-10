@@ -107,3 +107,10 @@
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);    
 }
+.dropdown-toggle::after {
+    margin-left: 0;
+}
+#navbarTogglerMainMenu .nav-item a.text-sub-menu {
+    font-size: 1rem;
+    font-weight: normal;
+}
