@@ -3,6 +3,10 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule  } from '@angular/platform-browser/animations';
+import { I18N_PROVIDERS } from './i18next.config';
+import { I18NextModule } from 'angular-i18next';
+
+import {RenderHtmlPipe} from './pipes/render-html.pipe';
 
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
@@ -22,11 +26,11 @@ import { EventSectionComponent } from './components/event-section/event-section.
 import { TestimonialFaqComponent } from './components/testimonial-faq/testimonial-faq.component';
 import { CtaSectionComponent } from './components/cta-section/cta-section.component';
 import { GallerySectionComponent } from './components/gallery-section/gallery-section.component';
-import { I18N_PROVIDERS } from './i18next.config';
-import { I18NextModule } from 'angular-i18next';
+import { WhyFpsComponent } from './pages/why-fps/why-fps.component'
 
-import {RenderHtmlPipe} from './pipes/render-html.pipe';
-import { PreLoadingComponent } from './components/pre-loading/pre-loading.component'
+import { PreLoadingComponent } from './components/pre-loading/pre-loading.component';
+import { FaqComponent } from './pages/faq/faq.component';
+import { PricingComponent } from './pages/pricing/pricing.component';
 
 const appRouters: Routes = [
   { path: '', component: HomePageComponent },
@@ -36,6 +40,9 @@ const appRouters: Routes = [
   { path: 'news', component: NewsComponent},
   { path: 'recruitment', component: RecruitmentComponent},
   { path: 'contact', component: ContactComponent},
+  { path: 'why-fps', component: WhyFpsComponent},
+  { path: 'faq', component: FaqComponent},
+  { path: 'pricing', component: PricingComponent},
   { path: '**', component: PageNotFoundComponent }
 ];
 
@@ -59,7 +66,10 @@ const appRouters: Routes = [
     TestimonialFaqComponent,
     CtaSectionComponent,
     GallerySectionComponent,
-    PreLoadingComponent,        
+    PreLoadingComponent,
+    WhyFpsComponent,
+    FaqComponent,
+    PricingComponent,        
   ],  
   imports: [
     CommonModule,

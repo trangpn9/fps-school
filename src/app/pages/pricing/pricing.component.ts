@@ -4,11 +4,11 @@ import { I18NEXT_SERVICE, ITranslationService } from 'angular-i18next';
 import { GetDataAboutUsService } from 'src/app/services/get-data-about-us.service';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  selector: 'app-pricing',
+  templateUrl: './pricing.component.html',
+  styleUrls: ['./pricing.component.scss']
 })
-export class ContactComponent implements OnInit {
+export class PricingComponent implements OnInit {
 
   data:object;
 
@@ -19,8 +19,8 @@ export class ContactComponent implements OnInit {
     private meta: Meta,
   ) { }
 
-  ngOnInit() {
-    this._getData.getDataPageById('27').subscribe((data: object) => {      
+  ngOnInit(): void {
+    this._getData.getDataPageById('29').subscribe((data: object) => {      
       this.data = {...data}      
       this.title.setTitle(this.data['title']['rendered']  + ' | FPS School - Hà Nội');
       this.i18NextService.addResourceBundle('en', 'translation', {

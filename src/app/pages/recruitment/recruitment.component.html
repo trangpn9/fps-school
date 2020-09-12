@@ -6,10 +6,10 @@
     </div>
     <div class="container" *ngIf="data; else loading">
         <div class="row">
-            <h1 class="h3-title d-flex text-color set-font-menu">{{data['title']['rendered']}}</h1>
+            <h1 class="h3-title d-flex text-color set-font-menu">{{'titlePage' | i18next}}</h1>
         </div>
         <div class="row">
-            <div class="col" [innerHTML]="data['content']['rendered'] | renderHtml"></div>
+            <div class="col" [innerHTML]="'contentPage' | i18next | renderHtml"></div>
         </div>
     </div>
 </section>
