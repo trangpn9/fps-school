@@ -79,3 +79,8 @@ figure {
 .about-section .image-box .image-1 img {
     border-radius: 30px;
 }
+@media screen and (max-width: 769px) {
+    .about-section {
+      padding-top: 15px !important;
+    }
+}

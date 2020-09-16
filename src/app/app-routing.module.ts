@@ -36,7 +36,7 @@ const appRouters: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'hone', redirectTo: '/', pathMatch: 'full' },
   { path: 'about-us', component: AboutUsComponent },
-  { path: 'services', component: ServicesUsComponent},
+  { path: 'curriculum', component: ServicesUsComponent},
   { path: 'news', component: NewsComponent},
   { path: 'recruitment', component: RecruitmentComponent},
   { path: 'contact', component: ContactComponent},

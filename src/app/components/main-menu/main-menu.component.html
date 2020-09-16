@@ -10,6 +10,9 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarTogglerMainMenu">
+        <a routerLink="/" class="d-none d-md-block text-center">
+          <img alt="Logo Foxs-USA" class="logo" src="../../../assets/images/logo_FPS_210.png" title="Logo Foxs-USA" />
+        </a>
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
             <a class="nav-link text-center text-color nav-link-0" routerLinkActive="active"
@@ -19,18 +22,27 @@
             <a class="nav-link text-center text-color nav-link-1" routerLinkActive="active"
               routerLink="/about-us">{{'menu-about' | i18next}}</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-center text-color nav-link-2" routerLinkActive="active"
-              routerLink="/news">{{'menu-news' | i18next}}</a>
-          </li>
-        </ul>
-        <a routerLink="/" class="d-sm-block d-none text-center">
-          <img alt="Logo Foxs-USA" class="logo" src="../../../assets/images/logo_FPS_210.png" title="Logo Foxs-USA" />
-        </a>
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link text-center text-color nav-link-3" routerLinkActive="active"
-              routerLink="/services">{{'menu-curriculum' | i18next}}</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-center text-color nav-link-2 dropdown-toggle" routerLinkActive="active"
+              routerLink="/news"
+              id="navbarDropdownB" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{'menu-news' | i18next}}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownB">
+              <a class="dropdown-item text-sub-menu" routerLink="/" style="color: #ffc000 !important">Hoạt động FPS</a>     
+              <div class="dropdown-divider"></div>                       
+              <a class="dropdown-item text-sub-menu" routerLink="/recruitment" style="color: #FF2002 !important">{{'menu-recrutement' | i18next}}</a>              
+            </div>
+          </li>        
+          <li class="nav-item dropdown">
+            <a class="nav-link text-center text-color nav-link-3 dropdown-toggle" routerLinkActive="active"
+              id="navbarDropdownA" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{'menu-curriculum' | i18next}}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownA">
+              <a class="dropdown-item text-sub-menu" routerLink="/curriculum" style="color: #FF2002 !important">Phương pháp giảng dạy</a>              
+              <a class="dropdown-item text-sub-menu" routerLink="/contact" style="color: #ffc000 !important">Chương trình học</a>                            
+            </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link text-center text-color nav-link-4 dropdown-toggle" routerLinkActive="active"              
@@ -47,13 +59,9 @@
           </li>                  
           <li class="nav-item">
             <a class="nav-link text-center text-color nav-link-5" routerLinkActive="active"
-              routerLink="/recruitment">{{'menu-recrutement' | i18next}}</a>
+              routerLink="/menus">{{'menu-menu' | i18next}}</a>
           </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0 d-none">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
-        </form>
+        </ul>        
       </div>
     </nav>
   </div>

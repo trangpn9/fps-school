@@ -18,33 +18,39 @@
         bottom: unset;
         display: none !important;
     }
-    .bg-custom-light #navbarTogglerMainMenu li.nav-item .nav-link.nav-link-0.active {
-        border: 1.5px solid #FF2002 !important;
+    .navbar-nav.mx-auto {
+        display: block;
+        float: left;
+    }
+    .navbar-nav .dropdown-menu {
+        float: inherit;
+    }
+    .bg-custom-light #navbarTogglerMainMenu li.nav-item {
+        border: 1px solid rgba(0,0,0,.15);
+        width: 50%;
+        float: left;
+    }
+    .bg-custom-light #navbarTogglerMainMenu li.nav-item .nav-link.nav-link-0.active {        
         border-radius: 20px;
         color: #FF2002 !important;
     }
-    .bg-custom-light #navbarTogglerMainMenu li.nav-item .nav-link.nav-link-1.active {
-        border: 1.5px solid #ffc000 !important;
+    .bg-custom-light #navbarTogglerMainMenu li.nav-item .nav-link.nav-link-1.active {        
         border-radius: 20px;
         color: #ffc000 !important;
     }
-    .bg-custom-light #navbarTogglerMainMenu li.nav-item .nav-link.nav-link-2.active {
-        border: 1.5px solid #CC125D !important;
+    .bg-custom-light #navbarTogglerMainMenu li.nav-item .nav-link.nav-link-2.active {        
         border-radius: 20px;
         color: #CC125D !important;
     }
-    .bg-custom-light #navbarTogglerMainMenu li.nav-item .nav-link.nav-link-3.active {
-        border: 1.5px solid #14b7f1 !important;
+    .bg-custom-light #navbarTogglerMainMenu li.nav-item .nav-link.nav-link-3.active {        
         border-radius: 20px;
         color: #14b7f1 !important;
     }
-    .bg-custom-light #navbarTogglerMainMenu li.nav-item .nav-link.nav-link-4.active {
-        border: 1.5px solid #ee257c !important;
+    .bg-custom-light #navbarTogglerMainMenu li.nav-item .nav-link.nav-link-4.active {        
         border-radius: 20px;
         color: #ee257c !important;
     }
-    .bg-custom-light #navbarTogglerMainMenu li.nav-item .nav-link.nav-link-5.active {
-        border: 1.5px solid rgb(25, 117, 17) !important;
+    .bg-custom-light #navbarTogglerMainMenu li.nav-item .nav-link.nav-link-5.active {        
         border-radius: 20px;
         color: rgb(25, 117, 17) !important;
     }
