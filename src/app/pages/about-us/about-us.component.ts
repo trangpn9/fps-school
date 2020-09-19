@@ -21,7 +21,7 @@ export class AboutUsComponent implements OnInit {
 
   ngOnInit() {    
     this._getData.getDataPageById('12').subscribe((data: object) => {      
-      this.data = {...data}      
+      this.data = {...data};      
       this.title.setTitle(this.data['title']['rendered']  + ' | FPS School - Hà Nội'); 
       this.i18NextService.addResourceBundle('en', 'translation', {
         titlePage: this.data['acf']['title_english'],

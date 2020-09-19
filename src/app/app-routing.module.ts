@@ -31,6 +31,7 @@ import { WhyFpsComponent } from './pages/why-fps/why-fps.component'
 import { PreLoadingComponent } from './components/pre-loading/pre-loading.component';
 import { FaqComponent } from './pages/faq/faq.component';
 import { PricingComponent } from './pages/pricing/pricing.component';
+import { DetailPostComponent } from './posts/detail-post/detail-post.component';
 
 const appRouters: Routes = [
   { path: '', component: HomePageComponent },
@@ -43,6 +44,7 @@ const appRouters: Routes = [
   { path: 'why-fps', component: WhyFpsComponent},
   { path: 'faq', component: FaqComponent},
   { path: 'pricing', component: PricingComponent},
+  { path: 'post/:slug', component: DetailPostComponent},
   { path: '**', component: PageNotFoundComponent }
 ];
 
@@ -69,7 +71,8 @@ const appRouters: Routes = [
     PreLoadingComponent,
     WhyFpsComponent,
     FaqComponent,
-    PricingComponent,        
+    PricingComponent,
+    DetailPostComponent,        
   ],  
   imports: [
     CommonModule,
