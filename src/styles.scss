@@ -478,3 +478,11 @@ h3 a:hover{
 .bg-main-content-page.about-section .image-box .image-1 img {
   border-radius: 30px;
 }
+@media screen and (max-width: 600px) {  
+  .bg-main-content-page.about-section .anim-icon .icon-3 {
+    display: none;
+  }
+  .bg-main-content-page.about-section {    
+    padding-bottom: 30px;
+}
+}
