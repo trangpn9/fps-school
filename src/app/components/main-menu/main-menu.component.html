@@ -1,6 +1,6 @@
 <div class="bg-custom-light sticky-top" id="main-menu">
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light row">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand d-block d-md-none" routerLink="/">
         <img alt="Logo Foxs-USA" src="../../../assets/images/logo_FPS_210_mobile.png" style="width: 100px;" />
       </a>
@@ -10,10 +10,11 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarTogglerMainMenu">
+        <div class="d-flex justify-content-center align-items-center" style="width: 100%;">
         <a routerLink="/" class="d-none d-md-block text-center">
           <img alt="Logo Foxs-USA" class="logo" src="../../../assets/images/logo_FPS_210.png" title="Logo Foxs-USA" />
         </a>
-        <ul class="navbar-nav mx-auto">
+        <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link text-center text-color nav-link-0" routerLinkActive="active"
               [routerLinkActiveOptions]="{ exact: true }" routerLink="/">{{'menu-home' | i18next}}</a>
@@ -62,6 +63,7 @@
               routerLink="/menus">{{'menu-menu' | i18next}}</a>
           </li>
         </ul>        
+      </div>
       </div>
     </nav>
   </div>

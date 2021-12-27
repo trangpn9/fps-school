@@ -27,7 +27,7 @@
     }
     .bg-custom-light #navbarTogglerMainMenu li.nav-item {
         border: 1px solid rgba(0,0,0,.15);
-        width: 50%;
+        /* width: 50%; */
         float: left;
     }
     .bg-custom-light #navbarTogglerMainMenu li.nav-item .nav-link.nav-link-0.active {        
