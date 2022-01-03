@@ -1,0 +1,19 @@
+<section class="bg-main-content-page about-section page-section-icon">
+  <div class="anim-icon">
+      <div class="icon icon-1 float-bob-x"></div>
+      <div class="icon icon-2 wow zoomIn"></div>
+      <div class="icon icon-3"></div>
+  </div>
+  <div class="container" *ngIf="data; else loading">
+      <div class="row">
+          <h1 class="h3-title d-flex text-color set-font-menu">{{'titlePage' | i18next}}</h1>
+      </div>
+      <div class="row">
+          <div class="col" [innerHTML]="'contentPage' | i18next | renderHtml"></div>
+      </div>
+  </div>
+</section>
+
+<ng-template #loading>    
+  <app-pre-loading></app-pre-loading>
+</ng-template>

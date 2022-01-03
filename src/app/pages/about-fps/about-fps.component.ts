@@ -1,14 +1,14 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { GetDataAboutUsService } from '../../services/get-data-about-us.service'
 import { Title, Meta } from '@angular/platform-browser';
 import { I18NEXT_SERVICE, ITranslationService } from 'angular-i18next';
 
 @Component({
-  selector: 'app-about-us',
-  templateUrl: './about-us.component.html',
-  styleUrls: ['./about-us.component.scss']
+  selector: 'app-about-fps',
+  templateUrl: './about-fps.component.html',
+  styleUrls: ['./about-fps.component.scss']
 })
-export class AboutUsComponent implements OnInit {
+export class AboutFpsComponent implements OnInit {
 
   data:object;  
 
@@ -19,8 +19,8 @@ export class AboutUsComponent implements OnInit {
     private meta: Meta,
   ) { }
 
-  ngOnInit() {    
-    this._getData.getDataPageById('12').subscribe((data: object) => {      
+  ngOnInit(): void {
+    this._getData.getDataPageById('155').subscribe((data: object) => {      
       this.data = {...data};      
       this.title.setTitle(this.data['title']['rendered']  + ' | FPS School - Hà Nội'); 
       this.i18NextService.addResourceBundle('en', 'translation', {

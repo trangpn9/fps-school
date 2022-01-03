@@ -28,16 +28,27 @@ import { CtaSectionComponent } from './components/cta-section/cta-section.compon
 import { GallerySectionComponent } from './components/gallery-section/gallery-section.component';
 import { WhyFpsComponent } from './pages/why-fps/why-fps.component'
 
-import { PreLoadingComponent } from './components/pre-loading/pre-loading.component';
 import { FaqComponent } from './pages/faq/faq.component';
 import { PricingComponent } from './pages/pricing/pricing.component';
 import { DetailPostComponent } from './posts/detail-post/detail-post.component';
 import { StudyProgramComponent } from './pages/study-program/study-program.component';
+import { AboutFpsComponent } from './pages/about-fps/about-fps.component';
+import { InfrastructureComponent } from './pages/infrastructure/infrastructure.component';
+import { StaffComponent } from './pages/staff/staff.component';
+import { OneDayOfFpsComponent } from './pages/one-day-of-fps/one-day-of-fps.component';
+import { ListMenuComponent } from './pages/list-menu/list-menu.component';
+
+import { PreLoadingComponent } from './components/pre-loading/pre-loading.component';
 
 const appRouters: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'hone', redirectTo: '/', pathMatch: 'full' },
   { path: 'about-us', component: AboutUsComponent },
+  { path: 'about-fps', component:  AboutFpsComponent},
+  { path: 'infrastructure', component: InfrastructureComponent },
+  { path: 'staff', component: StaffComponent },
+  { path: 'one-day-of-fps', component: OneDayOfFpsComponent },
+  { path: 'list-menu', component: ListMenuComponent },
   { path: 'curriculum', component: ServicesUsComponent},
   { path: 'news', component: NewsComponent},
   { path: 'recruitment', component: RecruitmentComponent},
@@ -75,7 +86,12 @@ const appRouters: Routes = [
     FaqComponent,
     PricingComponent,
     DetailPostComponent,
-    StudyProgramComponent,        
+    StudyProgramComponent,      
+    AboutFpsComponent,
+    InfrastructureComponent,
+    StaffComponent,
+    OneDayOfFpsComponent,
+    ListMenuComponent,
   ],  
   imports: [
     CommonModule,

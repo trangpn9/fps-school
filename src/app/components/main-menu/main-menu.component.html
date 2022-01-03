@@ -12,16 +12,26 @@
       <div class="collapse navbar-collapse" id="navbarTogglerMainMenu">
         <div class="d-flex justify-content-center align-items-center" style="width: 100%;">
         <a routerLink="/" class="d-none d-md-block text-center">
-          <img alt="Logo Foxs-USA" class="logo" src="../../../assets/images/logo_FPS_210.png" title="Logo Foxs-USA" />
+          <img alt="Logo FPS School" class="logo" src="../../../assets/images/logo_FPS_210.png" title="Logo FPS School" />
         </a>
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link text-center text-color nav-link-0" routerLinkActive="active"
               [routerLinkActiveOptions]="{ exact: true }" routerLink="/">{{'menu-home' | i18next}}</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-center text-color nav-link-1" routerLinkActive="active"
-              routerLink="/about-us">{{'menu-about' | i18next}}</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-center text-color nav-link-1 dropdown-toggle" routerLinkActive="active"
+              routerLink="/about-us"
+              id="navbarDropdownC" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{'menu-about' | i18next}}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownC">
+              <a class="dropdown-item text-sub-menu" routerLink="/about-fps" style="color: #ffc000 !important">{{'menu-about-fps' | i18next}}</a>     
+              <div class="dropdown-divider"></div>                       
+              <a class="dropdown-item text-sub-menu" routerLink="/infrastructure" style="color: #FF2002 !important">{{'menu-infra' | i18next}}</a>              
+              <div class="dropdown-divider"></div>                       
+              <a class="dropdown-item text-sub-menu" routerLink="/staff" style="color: #14b7f1 !important">{{'menu-staff' | i18next}}</a>              
+            </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link text-center text-color nav-link-2 dropdown-toggle" routerLinkActive="active"
@@ -58,9 +68,15 @@
               <a class="dropdown-item text-sub-menu" routerLink="/faq" style="color: rgb(25, 117, 17) !important">Câu hỏi thường gặp</a>
             </div>
           </li>                  
-          <li class="nav-item">
-            <a class="nav-link text-center text-color nav-link-5" routerLinkActive="active"
-              routerLink="/menus">{{'menu-menu' | i18next}}</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-center text-color nav-link-5 dropdown-toggle" routerLinkActive="active"
+              id="navbarDropdownD" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{'menu-menu' | i18next}}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownD">
+              <a class="dropdown-item text-sub-menu" routerLink="/one-day-of-fps" style="color: #FF2002 !important">{{'menu-one-day' | i18next}}</a>
+              <a class="dropdown-item text-sub-menu" routerLink="/list-menu" style="color: #ffc000 !important">{{'menu-menu' | i18next}}</a>
+            </div>
           </li>
         </ul>        
       </div>

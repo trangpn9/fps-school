@@ -1,6 +1,10 @@
 {
   "menu-home": "Home",
   "menu-about": "About us",
+  "menu-about-fps": "About FPS",
+  "menu-infra": "Infrastructure",
+  "menu-staff": "Staff",
+  "menu-one-day": "One day of FPS",
   "menu-news": "FPS News",
   "menu-curriculum": "Curriculum",
   "menu-enroll": "Enroll",
