@@ -16,5 +16,9 @@ export class GetDataPostService {
   getDataPostBySlug(slug: string) {
     return this.http.get(`${AppSetting.API_SERVICE}wp/v2/posts/?slug=${slug}&?_embed`);    
   }
+
+  getListPostByIdCategory(id: string, perPage: string = '3') {
+    return this.http.get(`${AppSetting.API_SERVICE}wp/v2/posts/?categories=${id}&per_page=${perPage}&?_embed`);
+  }
   
 }
