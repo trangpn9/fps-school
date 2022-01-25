@@ -24,7 +24,6 @@ export class EventSectionComponent implements OnInit {
   ngOnInit() {
     this._getDataPostService.getListPostByIdCategory('1', '4').subscribe((data: any) => {
       this.data = data;
-      console.log('Data: ', this.data);
     });
   }
 

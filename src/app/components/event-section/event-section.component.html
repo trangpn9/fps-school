@@ -15,7 +15,7 @@
                         <div class="content-box">
                             <div class="date">{{item['acf']['event_date_cus']}}</div>
                             <h3><a [routerLink]="['post/', item['slug']]">{{item['title']['rendered']}}</a></h3>
-                            <div class="text text-justify" [innerHTML]="item['content']['rendered'] | renderHtml"></div>
+                            <div class="text text-justify">{{item['acf']['short_descriptions_cus']}}</div>
                             <div class="location"><fa-icon [icon]="faMapMarkerAlt"></fa-icon> Địa Điểm : <span>{{item['acf']['event_place_cus']}}</span></div>
                         </div>
                     </div>
