@@ -11,7 +11,7 @@
     "dev:ssr": "ng run fps-school:serve-ssr",
     "serve:ssr": "node dist/fps-school/server/main.js",
     "build:ssr": "ng build --configuration production && ng run fps-school:server:production",
-    "prerender": "ng run fps-school:prerender"
+    "prerender": "ng run fps-school:prerender --no-guess-routes"
   },
   "private": true,
   "dependencies": {
