@@ -1,15 +1,14 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { I18NEXT_SERVICE, ITranslationService } from 'angular-i18next';
 import { GetDataAboutUsService } from './../../services/get-data-about-us.service';
 
 @Component({
-  selector: 'app-study-program',
-  templateUrl: './study-program.component.html',
-  styleUrls: ['./study-program.component.scss']
+  selector: 'app-kitchen-stoves',
+  templateUrl: './kitchen-stoves.component.html',
+  styleUrls: ['./kitchen-stoves.component.scss']
 })
-export class StudyProgramComponent implements OnInit {
-
+export class KitchenStovesComponent implements OnInit {
   data:object;
 
   constructor(
@@ -20,8 +19,8 @@ export class StudyProgramComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this._getData.getDataPageById('280').subscribe((data: object) => {      
-      this.data = {...data}            
+    this._getData.getDataPageById('229').subscribe((data: object) => {      
+      this.data = {...data}      
       this.title.setTitle(this.data['title']['rendered']  + ' | FPS School - Hà Nội');
       this.i18NextService.addResourceBundle('en', 'translation', {
         titlePage: this.data['acf']['title_english'],

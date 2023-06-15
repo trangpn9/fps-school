@@ -37,6 +37,7 @@ import { InfrastructureComponent } from './pages/infrastructure/infrastructure.c
 import { StaffComponent } from './pages/staff/staff.component';
 import { OneDayOfFpsComponent } from './pages/one-day-of-fps/one-day-of-fps.component';
 import { ListMenuComponent } from './pages/list-menu/list-menu.component';
+import {KitchenStovesComponent} from './pages/kitchen-stoves/kitchen-stoves.component';
 
 import { PreLoadingComponent } from './components/pre-loading/pre-loading.component';
 
@@ -57,6 +58,7 @@ const appRouters: Routes = [
   { path: 'faq', component: FaqComponent},
   { path: 'pricing', component: PricingComponent},
   { path: 'study-program', component: StudyProgramComponent},
+  { path: 'bep-an-che-do-dinh-duong', component: KitchenStovesComponent},
   { path: 'post/:slug', component: DetailPostComponent},
   { path: '**', component: PageNotFoundComponent }
 ];
@@ -92,6 +94,7 @@ const appRouters: Routes = [
     StaffComponent,
     OneDayOfFpsComponent,
     ListMenuComponent,
+    KitchenStovesComponent,
   ],  
   imports: [
     CommonModule,
