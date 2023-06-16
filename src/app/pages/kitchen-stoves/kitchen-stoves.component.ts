@@ -20,8 +20,8 @@ export class KitchenStovesComponent implements OnInit {
 
   ngOnInit(): void {
     this._getData.getDataPageById('229').subscribe((data: object) => {      
-      this.data = {...data}      
-      this.title.setTitle(this.data['title']['rendered']  + ' | FPS School - Hà Nội');
+      this.data = {...data}        
+      this.title.setTitle('Bếp ăn & Chế độ dinh dưỡng | FPS School - Hà Nội | FPS School - Hà Nội');
       this.i18NextService.addResourceBundle('en', 'translation', {
         titlePage: this.data['acf']['title_english'],
         contentPage: this.data['acf']['content_english'],

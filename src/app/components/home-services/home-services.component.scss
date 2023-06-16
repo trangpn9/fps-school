@@ -62,3 +62,17 @@
 .service-section .owl-content-slide h5.title-service-4 {
     color: rgb(25, 117, 17);
 }
+.service-section .sec-title h2.why-fps-homepage {
+    color: #FF2002 !important;
+}
+.list-group-item::before {
+    content: '-';
+    margin-right: 5px;
+}
+.list-group-item {
+    background-color: transparent !important;
+    color: #ffffff;
+    border: none;
+    font-weight: 400;
+    font-size: 20px;
+}
