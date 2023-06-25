@@ -17,9 +17,11 @@ export class OurTeamComponent implements OnInit {
   constructor(private _getDataPostService: GetDataPostService) { }
 
   ngOnInit() {
-    this._getDataPostService.getListPostByIdCategory('6').subscribe((data: any) => {
+    this._getDataPostService.getListPostByIdCategory('6', '6').subscribe((data: any) => {
       this.data = data;
     });
+
+    
   }
 
 }
