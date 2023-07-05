@@ -20,7 +20,7 @@
       <img class="d-block w-100" src="../../../assets/images/fps_slide/banner_03.jpg" alt="First slide">
     </div> -->
     <div class="carousel-item active" id="videoWrapper">
-      <iframe id="idIframe" width="560" height="315" src="https://www.youtube.com/embed/3yzrR0PiyhE?vq=hd1080&autoplay=1&loop=1&autopause=0&rel=0&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0"></iframe>
+      <iframe id="idIframe" width="560" height="315" [src]="srcVal | safe"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0"></iframe>
       <!-- <video controls autoplay>
         <source src="./../../../assets/videos/fps-vtc6.mp4" type="video/mp4">
         Your browser does not support the video tag.

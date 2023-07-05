@@ -7,6 +7,7 @@ import { I18N_PROVIDERS } from './i18next.config';
 import { I18NextModule } from 'angular-i18next';
 
 import {RenderHtmlPipe} from './pipes/render-html.pipe';
+import {SafePipe} from './pipes/safe.pipe';
 
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
@@ -65,6 +66,7 @@ const appRouters: Routes = [
 
 @NgModule({
   declarations: [
+    SafePipe,
     RenderHtmlPipe,
     PageNotFoundComponent,
     HomePageComponent,
