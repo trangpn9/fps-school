@@ -3,7 +3,7 @@
     <h1>{{'test' | i18next}}</h1>
     <p>Description, this is content translate</p>
     <h2>{{'addEn' | i18next}}</h2>
-  </div> -->  
+  </div> -->
   <!-- <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -20,7 +20,9 @@
       <img class="d-block w-100" src="../../../assets/images/fps_slide/banner_03.jpg" alt="First slide">
     </div> -->
     <div class="carousel-item active" id="videoWrapper">
-      <iframe id="idIframe" width="560" height="315" [src]="srcVal | safe"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0"></iframe>
+      <youtube-player videoId="3yzrR0PiyhE" suggestedQuality="hd1080" [playerVars]="playerConfig"
+        (ready)="onReady($event)" [height]="600" [width]="1080"></youtube-player>
+      <!-- <iframe id="idIframe" width="560" height="315" [src]="srcVal | safe"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0"></iframe> -->
       <!-- <video controls autoplay>
         <source src="./../../../assets/videos/fps-vtc6.mp4" type="video/mp4">
         Your browser does not support the video tag.

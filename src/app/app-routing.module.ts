@@ -5,6 +5,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule  } from '@angular/platform-browser/animations';
 import { I18N_PROVIDERS } from './i18next.config';
 import { I18NextModule } from 'angular-i18next';
+import { YouTubePlayerModule } from '@angular/youtube-player';
 
 import {RenderHtmlPipe} from './pipes/render-html.pipe';
 import {SafePipe} from './pipes/safe.pipe';
@@ -106,6 +107,7 @@ const appRouters: Routes = [
     ),
     CarouselModule,
     BrowserAnimationsModule,
+    YouTubePlayerModule,
     I18NextModule.forRoot(),
   ],
   providers: [
