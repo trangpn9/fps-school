@@ -11,8 +11,10 @@ export class SlideComponent implements OnInit {
 
   playerConfig = {
     controls: 0,
-    mute: 1,
-    autoplay: 1
+    enablejsapi: 1,
+    origin: "https://trangpn-api.froebelhanoi.edu.vn",
+    autoPlay: 1,
+    mute:1,
   };
 
   constructor() { }
@@ -26,8 +28,8 @@ export class SlideComponent implements OnInit {
   }
 
   onReady(e): void {
-    e.target.setVolume("100")
-    console.log(e.target, 'its ready')
-    
+    // e.target.stopVideo();    
+    e.target.playVideo();
+    console.log(e.target, 'its ready');
   }
 }
